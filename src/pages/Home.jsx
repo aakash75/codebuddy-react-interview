@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import InputComponent from '../Components/InputComponent';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,7 +12,9 @@ const Home = () => {
   return (
     <main>
       <div className="bg-light p-5 mb-5">
-        <h1>React + Bootstrap v4</h1>
+        <InputComponent />
+      </div>
+      {/* <h1>React + Bootstrap v4</h1>
         <p>React template with Bootstrap version v4</p>
         <p>
           <Button variant="primary">Learn more</Button>
@@ -21,7 +24,7 @@ const Home = () => {
         <Form>
           <Button onClick={onSubmit}>Goto Posts</Button>
         </Form>
-      </Container>
+      </Container> */}
     </main>
   );
 };
